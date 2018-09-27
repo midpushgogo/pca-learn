@@ -13,7 +13,7 @@ def pca(data,dimension):
     lowdata=np.dot(data,eigvects) # 基代换
     return lowdata
 
-iris = datasets.load_iris()
+iris = datasets.load_iris() #读取数据
 data = iris['data']
 features = iris.data.T
 ax = plt.subplot(111, projection='3d')
